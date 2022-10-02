@@ -31,13 +31,13 @@ const Home = () => {
       id: 2,
       title: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
       desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. A possimus excepturi aliquid nihil cumque ipsam facere aperiam at! Ea dolorem ratione sit debitis deserunt repellendus numquam ab vel perspiciatis corporis!",
-      img: "https://images.pexels.com/photos/https://kartinkin.net/uploads/posts/2021-08/1627781453_37-kartinkin-com-p-frukti-rossii-yeda-krasivo-foto-40.jpg",
+      img: "https://s1.1zoom.ru/big7/402/Fruit_Melons_Strawberry_Citrus_Peaches_524269_2560x1708.jpg",
     },
     {
       id: 3,
       title: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
       desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. A possimus excepturi aliquid nihil cumque ipsam facere aperiam at! Ea dolorem ratione sit debitis deserunt repellendus numquam ab vel perspiciatis corporis!",
-      img: "https://argumenti.ru/images/arhnews/410714.jpg",
+      img: "https://vsegda-pomnim.com/uploads/posts/2022-04/1651212185_14-vsegda-pomnim-com-p-frukti-svezhie-foto-15.jpg",
     },
     {
       id: 4,
@@ -58,7 +58,7 @@ const Home = () => {
         {posts.map((post) => (
           <div className='post' key={post.id}>
             <div className='img'>
-              <img src={`../upload/${post.img}`} alt='' />
+              <img src={post.img} alt='' />
             </div>
             <div className='content'>
               <Link className='link' to={`/post/${post.id}`}>
